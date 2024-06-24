@@ -1,16 +1,175 @@
 ---
-
+import Header from "../assets/header_h2_new.png?url"
+import Booth from "../assets/icon_booth.png?url"
+import Fb from "../assets/icon_fb.png?url"
+import Line from "../assets/icon_line.png?url"
+import Nico from "../assets/icon_nico.png?url"
+import Tw from "../assets/icon_tw.png?url"
+import Yt from "../assets/icon_youtube.png?url"
+import "../styles/global.css"
+import BHeader from "../assets/top_h_new2.png?url"
+import Doushite from "../assets/doushite_crop_top.png?url"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>ピノキオピー オフィシャルウェブサイト</title>
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="../scripts/header.js"></script>
+		<script src="../scripts/player.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div style="min-height: 611px" class="overflow-hidden bg-[#f35688]" id="wrapper">
+			<header class="lg:h-[63px] lg:px-10 fixed lg:bottom-0 left-0 right-0 z-10 bg-[#f35688] bottom-auto h-auto" id = "bot_header">
+				<h1 class="lg:h-full pt-[21px] lg:float-left relative z-50 box-border pl-[30px] lg:pl-0 float-none h-[63px]">
+					<a href="#" class="text-inherit not-italic">
+						<img src={Header} alt="ピノキオピー" width="118" height="24">
+					</a>
+				</h1>
+				<div class="relative lg:absolute top-0 right-0 left-0 h-auto lg:h-auto bg-inherit" style="" id="menu_wrapper">
+					<nav class="lg:pt-[24px] w-full h-auto pt-[30px] text-center float-none">
+						<ul class = "text-center sm:max-lg:block sm:max-lg:pt-[20px]">
+							<li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]"><a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap]">NEWS</a></li>
+							<li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]"><a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap]">BIOGRAPHY</a></li>
+							<li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]"><a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap]">DISCOGRAPHY</a></li>
+							<li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]"><a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap]">LIVE</a></li>
+							<li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]"><a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap]">GOODS</a></li>
+							<li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]"><a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap]">CONTACT</a></li>
+						</ul>
+					</nav>
+					<div class="relative text-center lg:absolute top-0 right-0 lg:right-[40px] h-auto bg-inherit py-5 lg:px-0 mt-[40px] lg:mt-[0] lg:border-0 border-white border-t border-solid">
+						<ul class = "text-center inline-block">
+							<li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+								<a href="https://www.youtube.com/user/pinocchiopchannel" class="text-inherit not-italic inline-block">
+									<img src={Yt} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+								</a>
+							</li>
+							<li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+								<a href="https://www.nicovideo.jp/mylist/11284855" class="text-inherit not-italic inline-block">
+									<img src={Nico} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+								</a>
+							</li>
+							<li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+								<a href="https://twitter.com/pinocchiop" class="text-inherit not-italic inline-block">
+									<img src={Tw} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto  block">
+								</a>
+							</li>
+							<li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+								<a href="https://line.me/R/ti/p/%40pinocchiop" class="text-inherit not-italic inline-block">
+									<img src={Line} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+								</a>
+							</li>
+							<li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+								<a href="https://www.facebook.com/pinocchiop.official" class="text-inherit not-italic inline-block">
+									<img src={Fb} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+								</a>
+							</li>
+							<li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+								<a href="https://pinocchiop.booth.pm/https://pinocchiop.booth.pm/" class="text-inherit not-italic inline-block">
+									<img src={Booth} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="lg:hidden hover:cursor-pointer w-[30px] h-[29px] absolute top-[18px] right-[15px] block z-50" id="menu_btn">
+					<span class="_1 top-[3px] w-[30px] h-[4px] bg-white block absolute all transition-all duration-200 ease-linear"></span>
+					<span class="_2 top-[12px] w-[30px] h-[4px] bg-white block absolute all transition-all duration-200 ease-linear"></span>
+					<span class="_3 top-[21px] w-[30px] h-[4px] bg-white block absolute all transition-all duration-200 ease-linear"></span>
+				</p>
+			</header>
+			<section class = "max-w-[960px] px-[15px] mx-auto relative">
+				<header class="lg:h-[380px] lg:pt-[60px] lg:pb-[80px] relative pt-[100px] pb-[50px] box-content">
+					<p class = "w-[290px] h-[238px] relative right-0 lg:w-[465px] mx-auto lg:absolute lg:right-[30px] z-1">
+						<img src={Doushite} class="w-full h-auto">
+					</p>
+					<h1 class="lg:mt-[150px] mt-[30px] text-center">
+						<img src={BHeader} class="lg:w-[392px] lg:h-[80px] w-[190px] h-auto inline-block lg:block">
+					</h1>
+				</header>
+				<div class = "mb-[30px] overflow-hidden" id = "video">
+					<div>
+						<p class ="w-full md:w-[calc(50%-7px)] h-[198px] md:h-[266px] float-left bg-center bg-cover relative bg-[url(https://i.ytimg.com/vi/A1Ptl0qs-pE/0.jpg)]">
+							<a href="http://www.youtube.com/watch?v=A1Ptl0qs-pE" class = "youtube absolute top-0 right-0 left-0 bottom-0 block" data-video = "A1Ptl0qs-pE"></a>
+						</p>
+						<p class ="w-full md:w-[calc(50%-7px)] h-[198px] md:h-[266px] float-left bg-center bg-cover relative md:ml-[14px] bg-[url(https://i.ytimg.com/vi/LUch7N9Gw28/0.jpg)] mt-[20px] md:mt-0">
+							<a href="http://www.youtube.com/watch?v=LUch7N9Gw28" class = "youtube absolute top-0 right-0 left-0 bottom-0 block" data-video = "LUch7N9Gw28"></a>
+						</p>
+					</div>
+				</div>
+				<div>
+					<h3 class="lg:hidden block text-[24px] text-white tracking-widest mb-[20px] font-extrabold">::RECENT NEWS</h3>
+					<ul>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/997" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+							<time class="pr-[20px] hidden lg:inline-block">2024.5.10</time>
+								<span class="tracking-widest">新曲『嘘ミーム』MV公開</span>
+						    </a>
+						</li>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/994" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+								<time class="pr-[20px] hidden lg:inline-block">2024.4.18</time>
+								<span class="tracking-widest">「ピノキオピー2024 TOUR モンストロ」開催決定</span>
+						    </a>
+					    </li>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/993" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+								<time class="pr-[20px] hidden lg:inline-block">2024.4.17</time>
+								<span class="tracking-widest">『wowaka 歌詞集』寄稿</span>
+						    </a>
+					    </li>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/992" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+								<time class="pr-[20px] hidden lg:inline-block">2024.2.22</time>
+								<span class="tracking-widest">猫又おかゆ 新曲「ネコカブリーナ」楽曲提供</span>
+						    </a>
+					    </li>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/991" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+								<time class="pr-[20px] hidden lg:inline-block">2024.2.5</time>
+								<span class="tracking-widest">「全国バンド図鑑 2024上半期 vol.18」掲載</span>
+						    </a>
+					    </li>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/986" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+								<time class="pr-[20px] hidden lg:inline-block">2024.1.27</time>
+								<span class="tracking-widest">「ピノキオピー 15th アニバーサリーフェア in OIOI Web」</span>
+						    </a>
+					    </li>
+						<li class="mb-[20px] overflow-hidden whitespace-nowrap text-ellipsis">
+							<a href="https://pinocchiop.com/news/989" class = "hover:text-black hover:bg-white  w-full py-[4px] px-[15px] lg:py-[8px] lg:px-[23px] text-white text-[20px] bg-transparent block rounded-lg overflow-hidden text-ellipsis border-white border-solid border-2">
+								<time class="pr-[20px] hidden lg:inline-block">2024.1.26</time>
+								<span class="tracking-widest">新曲『Aじゃないか』MV公開</span>
+						    </a>
+					    </li>
+					</ul>
+				</div>
+				<div class="mb-[20px]">
+					<a href="">
+						<img src="https://pinocchiop.com/wp-content/uploads/2023/02/META_banner-for-HP.png" class="w-full h-auto">
+					</a>
+				</div>
+			</section>
+			<footer class="pt-[100px] pb-[103px] relative">
+				<p class="text-white text-center mt-[8px]">
+					© PinocchioP  all rights reserved.
+				</p>
+			</footer>
+			<div id="player" class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 z-50 hidden">
+				<div id="video_content" class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-2">
+				</div>
+				<div id="close_player" class="fixed top-0 right-0 left-0 bottom-0 z-1">
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
