@@ -1,0 +1,12 @@
+
+#current:after {
+    z-index: 50;
+    content: '';
+    width: 20px;
+    height: 28px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+    background: url(../assets/current_marker.png);
+}

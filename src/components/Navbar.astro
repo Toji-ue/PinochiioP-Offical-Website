@@ -1,0 +1,85 @@
+---
+import Header from "../assets/header_h2_new.png?url"
+import Booth from "../assets/icon_booth.png?url"
+import Fb from "../assets/icon_fb.png?url"
+import Line from "../assets/icon_line.png?url"
+import Nico from "../assets/icon_nico.png?url"
+import Tw from "../assets/icon_tw.png?url"
+import Yt from "../assets/icon_youtube.png?url"
+import "../styles/global.css"
+import "../styles/navbar.css"
+export interface Props {
+  className?: string;
+}
+const { className } = Astro.props;
+---
+<header class={`lg:h-[63px] lg:px-10 fixed lg:bottom-0 left-0 right-0 z-10 bottom-auto h-auto ${className}`} id="bot_header">
+    <h1 class="lg:h-full pt-[21px] lg:float-left relative z-50 box-border pl-[30px] lg:pl-0 float-none h-[63px]">
+        <a href="/" class="text-inherit not-italic">
+            <img src={Header} alt="ピノキオピー" width="118" height="24">
+        </a>
+    </h1>
+    <div class="relative lg:absolute top-0 right-0 left-0 h-auto lg:h-auto bg-inherit" id="menu_wrapper">
+        <nav class="lg:pt-[24px] w-full h-auto pt-[30px] text-center float-none">
+            <ul class="text-center sm:max-lg:block sm:max-lg:pt-[20px]">
+                <li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]">
+                    <a href="/news/" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap] transition-colors duration-300 ease-in-out hover:text-black">NEWS</a>
+                </li>
+                <li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]">
+                    <a href="/biography/" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap] transition-colors duration-300 ease-in-out hover:text-black">BIOGRAPHY</a>
+                </li>
+                <li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]">
+                    <a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap] transition-colors duration-300 ease-in-out hover:text-black">DISCOGRAPHY</a>
+                </li>
+                <li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]">
+                    <a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap] transition-colors duration-300 ease-in-out hover:text-black">LIVE</a>
+                </li>
+                <li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]">
+                    <a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap] transition-colors duration-300 ease-in-out hover:text-black">GOODS</a>
+                </li>
+                <li class="px-[5px] relative lg:inline-block block text-center mt-[15px] lg:mt-[0px]">
+                    <a href="" class="text-inherit not-italic text-white tracking-[0.07em] font-bold text-[17px] lg:text-[14px] font-[asap] transition-colors duration-300 ease-in-out hover:text-black">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="relative text-center lg:absolute top-0 right-0 lg:right-[40px] h-auto bg-inherit py-5 lg:px-0 mt-[40px] lg:mt-[0] lg:border-0 border-white border-t border-solid">
+            <ul class="text-center inline-block">
+                <li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+                    <a href="https://www.youtube.com/user/pinocchiopchannel" class="text-inherit not-italic inline-block">
+                        <img src={Yt} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+                    </a>
+                </li>
+                <li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+                    <a href="https://www.nicovideo.jp/mylist/11284855" class="text-inherit not-italic inline-block">
+                        <img src={Nico} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+                    </a>
+                </li>
+                <li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+                    <a href="https://twitter.com/pinocchiop" class="text-inherit not-italic inline-block">
+                        <img src={Tw} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto block">
+                    </a>
+                </li>
+                <li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+                    <a href="https://line.me/R/ti/p/%40pinocchiop" class="text-inherit not-italic inline-block">
+                        <img src={Line} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+                    </a>
+                </li>
+                <li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+                    <a href="https://www.facebook.com/pinocchiop.official" class="text-inherit not-italic inline-block">
+                        <img src={Fb} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+                    </a>
+                </li>
+                <li class="ml-[11px] relative lg:inline-block lg:float-none float-left block">
+                    <a href="https://pinocchiop.booth.pm/https://pinocchiop.booth.pm/" class="text-inherit not-italic inline-block">
+                        <img src={Booth} width="31" height="28" class="h-[21px] lg:h-[16px] w-auto align-bottom block">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p class="lg:hidden hover:cursor-pointer w-[30px] h-[29px] absolute top-[18px] right-[15px] block z-50" id="menu_btn">
+        <span class="_1 top-[3px] w-[30px] h-[4px] bg-white block absolute all transition-all duration-200 ease-linear"></span>
+        <span class="_2 top-[12px] w-[30px] h-[4px] bg-white block absolute all transition-all duration-200 ease-linear"></span>
+        <span class="_3 top-[21px] w-[30px] h-[4px] bg-white block absolute all transition-all duration-200 ease-linear"></span>
+    </p>
+</header>

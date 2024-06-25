@@ -1,0 +1,88 @@
+---
+import "../styles/global.css"
+import "../styles/biography.css"
+import Navbar from "../components/Navbar.astro"
+---
+<html lang="jp">
+    <head>
+        <meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="../scripts/header.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="bg-[#49dcc2]">
+            <Navbar className="bg-[#49dcc2]"/>
+            <div id="content_wrapper">
+                <section class="relative">
+                    <header class = "pt-[110px] md:pt-[100px] pb-[60px]">
+                        <h2 class="text-[#49dcc2] font-['asap']" id="tit">
+                            <span class="py-[10px] px-[15px] md:px-[30px] md:py-[10px] inline-block bg-white font-bold">BIOGRAPHY</span>
+                        </h2>
+                    </header>
+                    <div>
+                        <article class="rounded-xl bg-white overflow-hidden">
+                            <p class="relative m-0">
+                                <img src="https://pinocchiop.com/wp-content/uploads/2021/09/プロフィール写真3トリミング.png" class="w-full">
+                            </p>
+                            <div class="px-[15px] pt-[30px] pb-[20px] md:py-[50px] px-[30px] text-[15px] leading-6 tracking-extra-wide">
+                                <h3 class="mb-[30px] text-[30px] font-normal text-center lg:text-left">ピノキオピー</h3>
+                                <div>
+                                    <p>
+                                        2009年に動画共有サイトにてボーカロイドを用いた楽曲を発表し、ピノキオピーとして活動開始。
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        以降も精力的にオリジナル楽曲を発表しつつ、イラストやMVの制作、他アーティストへの楽曲提供など多方面で活動している。
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        ライブでは電子と肉体の共演・融合を基軸に、ドラムとスクラッチ＆サンプラーをサポートメンバーに加えたバンドセットでのパフォーマンスを行っている。
+                                    </p>
+                                </div>
+                                <p class="mt-[20px]"></p>
+                                <h4 class="font-bold">Character</h4>
+                                <p class="mt-[20px]">落書きが、いつのまにかマスコットになりました。</p>
+                                <p class="mt-[20px]">
+                                    <img loading="lazy" class="" src="https://pinocchiop.com/wp-content/uploads/2022/07/アイマイナ_2022-1000×975.png" alt="" width="217" height="212" srcset="https://pinocchiop.com/wp-content/uploads/2022/07/アイマイナ_2022-1000×975.png 1000w, https://pinocchiop.com/wp-content/uploads/2022/07/アイマイナ_2022-1000×975-600x585.png 600w, https://pinocchiop.com/wp-content/uploads/2022/07/アイマイナ_2022-1000×975-960x936.png 960w, https://pinocchiop.com/wp-content/uploads/2022/07/アイマイナ_2022-1000×975-768x749.png 768w" sizes="(max-width: 217px) 100vw, 217px">
+                                </p>
+                                <p class="mt-[20px]">
+                                    <strong>アイマイナ</strong>
+                                </p>
+                                <p class="mt-[20px]">
+                                    「曖昧」をモチーフにしたキャラクター。
+                                    <br>
+                                    無口。虚ろで曖昧な存在。
+                                </p>
+                                <p class="mt-[20px]">
+                                    <strong>
+                                        <img loading="lazy" class="" src="https://pinocchiop.com/wp-content/uploads/2022/07/どうしてちゃん_2022-1000×948.png" alt="" width="220" height="209" srcset="https://pinocchiop.com/wp-content/uploads/2022/07/どうしてちゃん_2022-1000×948.png 1000w, https://pinocchiop.com/wp-content/uploads/2022/07/どうしてちゃん_2022-1000×948-600x569.png 600w, https://pinocchiop.com/wp-content/uploads/2022/07/どうしてちゃん_2022-1000×948-960x910.png 960w, https://pinocchiop.com/wp-content/uploads/2022/07/どうしてちゃん_2022-1000×948-768x728.png 768w" sizes="(max-width: 220px) 100vw, 220px">
+                                    </strong>
+                                </p>
+                                <p class="mt-[20px]">
+                                    <strong>どうしてちゃん</strong>
+                                </p>
+                                <p class="mt-[20px]">
+                                    「疑問」をモチーフにしたキャラクター。
+                                    <br>
+                                    剃刀を持っていて、血の涙が出る。
+                                    <br>
+                                    ピンク色の部分は耳毛。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <footer class="pb-[70px] pt-[100px] lg:pb-[103px] relative bg-[#49dcc2]">
+                <p class="text-white text-[10px] text-center">© PinocchioP all rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

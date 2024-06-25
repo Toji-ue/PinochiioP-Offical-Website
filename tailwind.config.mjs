@@ -6,6 +6,9 @@ export default {
 			fontFamily: {
                 asap: ["Asap", "sans-serif"]
             },
+			letterSpacing: {
+				'extra-wide': '0.2em',
+			},
 		},
 	},
 	plugins: [],
